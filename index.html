@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elemental Frontier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="panel-block">
+          <div class="panel-title">Party</div>
+          <div id="partyList" class="party-list"></div>
+        </div>
+
+        <div class="panel-block inventory-block">
+          <div class="panel-title">Inventory</div>
+          <div id="inventoryList" class="inventory-list"></div>
+        </div>
+      </aside>
+
+      <main class="game-area">
+        <div class="hud">
+          <div class="hud-top">
+            <div>
+              <span class="eyebrow">Adventure</span>
+              <h1>Elemental Frontier</h1>
+            </div>
+            <div class="quest-box">
+              <span class="label">Quest</span>
+              <strong id="questText">Defeat raiders and recover relics</strong>
+            </div>
+          </div>
+
+          <div class="bars-row">
+            <div class="stat-box">
+              <div class="stat-head"><span>HP</span><strong id="hpText">0 / 0</strong></div>
+              <div class="bar-shell"><div id="hpBar" class="bar hp"></div></div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-head"><span>Stamina</span><strong id="staminaText">0 / 0</strong></div>
+              <div class="bar-shell"><div id="staminaBar" class="bar stamina"></div></div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-head"><span>Energy</span><strong id="energyText">0 / 0</strong></div>
+              <div class="bar-shell"><div id="energyBar" class="bar energy"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
